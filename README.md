@@ -24,3 +24,8 @@ Welcome to the AGI AI Assistant Web Application! This application provides an in
 
    ```bash
    git clone https://github.com/your-username/agi-ai-assistant-web.git
+
+### 
+python -m venv venv
+##
+./venv/scripts/activate
