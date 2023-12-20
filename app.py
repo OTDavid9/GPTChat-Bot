@@ -1,12 +1,12 @@
 from flask import Flask, request, jsonify
-# from flask_cors import CORS
+from flask_cors import CORS
 from dotenv import load_dotenv
 from openai import OpenAI
 import os
 import logging
 
 app = Flask(__name__)
-# CORS(app)
+CORS(app)
 
 # Load environment variables from .env file
 load_dotenv()
@@ -24,7 +24,7 @@ client = OpenAI(api_key=api_key)
 chat_history = []
 
 # Route to handle GPT-3 requests
-@app.route("/", methods=["POST"])
+@app.route("/gpt-request", methods=["POST"])
 def gpt_request():
     try:
         data = request.get_json()
