@@ -18,8 +18,8 @@ function sendMessage() {
 
     // Make API call to the backend
 
-    // fetch("http://localhost:5000/gpt-request", {
-    fetch("http://127.0.0.1:5000", {
+    
+    fetch("https://gpt-chat-bot-eight.vercel.app", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
