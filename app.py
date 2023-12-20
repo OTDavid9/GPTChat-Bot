@@ -1,12 +1,12 @@
 from flask import Flask, request, jsonify
-from flask_cors import CORS
+# from flask_cors import CORS
 from dotenv import load_dotenv
 from openai import OpenAI
 import os
 import logging
 
 app = Flask(__name__)
-CORS(app)
+# CORS(app)
 
 # Load environment variables from .env file
 load_dotenv()
