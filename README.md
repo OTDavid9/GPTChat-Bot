@@ -29,3 +29,6 @@ Welcome to the AGI AI Assistant Web Application! This application provides an in
 python -m venv venv
 ##
 ./venv/scripts/activate
+
+
+jjhhhhhhh
