@@ -24,7 +24,7 @@ client = OpenAI(api_key=api_key)
 chat_history = []
 
 # Route to handle GPT-3 requests
-@app.route("/gpt-request", methods=["POST"])
+@app.route("/", methods=["POST"])
 def gpt_request():
     try:
         data = request.get_json()
